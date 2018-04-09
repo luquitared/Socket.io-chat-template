@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WebsiteTap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <link rel="stylesheet" type="text/css" href="style2.css"/>
+  <script src="main.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/groups">My Groups</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/home">Home</a></li>
+      <li><a href="#">Feed</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="header">
+  <h1> WebsiteTap</h1>
+  <h4>Share websites effectively with friends, colleagues, or communities</h1>
+</div>
+
+
+<div class="container">
+  <div class="join-room">
+    <h4> Drop a link below: </h4>
+    <input type="text" class="form-control" id="input_rm_name">
+    <button type="button" id="create_button" class="btn btn-primary">GO!</button>
+  </div>
+</div>
+
+<div class="list-group">
+    <li> <i id="up"class="fa fa-thumbs-up" style="font-size:60px;color:green;"></i> </li>
+    <li> <i id="down"class="fa fa-thumbs-down" style="font-size:60px;color:purple;"> </i>
+    <li> <i id="flag"class="fa fa-flag" style="font-size:60px;color:red;"></i> </li>
+</div>
+
+<div class="reactions">
+    <li id="up-count"> 1</li>
+    <li id="down-count"> 15</i>
+    <li id="flag-count"> 89</li>
+</div>
+
+
+<div class="container">
+  <div class=comments>
+<!-- comments are generated here via jquery -->
+  </div>
+</div>
+
+<div class="container">
+  <div class="leave_comment">
+    <button type="button" id="post_comment" class="btn btn-success">Post a comment</button>
+    <label for="comment">Comment:</label>
+    <textarea id="comment_box" class="form-control" rows="5"></textarea>
+    <button type="button" id="send_msg_button" class="btn btn-success">Send</button>
+  </div>
+</div>
+
+<!-- Live feed -->
+<div class="container">
+
+  
+<div class="footer">
+  <p>Share websites effectively with friends, colleagues, or communities.</p>
+</div>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
